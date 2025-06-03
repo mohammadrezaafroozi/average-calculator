@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<h1 id="show">your total</h1>
+<body>
+<script>
+    const show = document.getElementById("show")
+    let math = +prompt('enter your math score')
+    let chemist = +prompt('enter your chemist score')
+    let physics = +prompt('enter your physic score')
+    let eng = +prompt('enter your english score')
+    let total = 3*math + 2*chemist + 2*physics + eng
+    show.innerHTML= total / 8 ;
+
+</script>
+</body>
+
+</html>
